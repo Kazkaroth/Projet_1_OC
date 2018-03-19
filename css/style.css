@@ -143,6 +143,8 @@ ul, ol, li{
     border: 0;
     border-bottom: solid 3px #4494bb;
     }
+.innerBgButton a{text-decoration: none}
+.innerBgButton a:visited{text-decoration: none}
     .innerBgButton:hover{font-size: 0.8em;cursor: pointer}
     .innerBgButton:focus{outline-style:none;}
 .bg2{
@@ -224,7 +226,7 @@ ul, ol, li{
     justify-content: center;
 }
 .main2 h3{
-    margin: 10% 0 0 5%;
+    margin: 10% 0 1% 5%;
 }
 .main2 p{
     margin: 2% 0 0 5%;
@@ -538,7 +540,7 @@ footer a{
         margin: 10% 5% 5% 5%;
     }
     .items li{
-        width: 30%;
+        width: 48%;
     }
 }
 @media all and (min-width: 320px) and (max-width: 767px) {
@@ -627,16 +629,23 @@ footer a{
 }
 @media all and (min-device-width: 320px) and (max-device-width: 767px) {
     body {padding-top: 30%;}
-    #accueil:target{padding-top: 25%;margin-top: -25%;}
-    #services:target{padding-top: 25%;margin-top: -25%;}
-    #projets:target{padding-top: 25%;margin-top: -25%;}
-    #contact:target{padding-top: 25%;margin-top: -25%;}
+    #accueil:target{padding-top: 20%;margin-top: -20%;}
+    #services:target{padding-top: 20%;margin-top: -20%;}
+    #projets:target{padding-top: 20%;margin-top: -20%;}
+    #contact:target{padding-top: 20%;margin-top: -20%;}
     .sectionDivider{margin: 10% 0;}
     .header nav {
         width: 80%;
         margin: 0 10% 0 10%;
         flex-direction: column;
         align-items: center;
+    }
+    .header .navB img{margin: 1% 0}
+    .header .navB ul{
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        font-size: 2em;
     }
     .bg1{display: flex; align-items: center;text-align: center;}
     .bg1 label{display: none;}
@@ -654,6 +663,16 @@ footer a{
         align-items: center;
         color: inherit;
     }
+    .innerBgButton {
+        width: 30%;
+        font-size: 2em;
+        height: 90px;
+        text-decoration: none;
+        }
+    .innerBgButton a{color: white}
+    .innerBgButton:hover{font-size: 2.3em}
+    .innerBgButton a:visited{color: white}
+    .innerBgButton a:focus{outline-style: none}
     .mainServices {
         flex-direction: column;
         align-items: center;
@@ -668,6 +687,7 @@ footer a{
     }
     .main2{
         width: 100%;
+        margin-bottom: 10%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -691,21 +711,27 @@ footer a{
     .subMain2 h3{margin: 0 0 2% 0;font-size: 1.5em;}
     .subMain2 p{width: 80%;margin: 0;}
     #projets p{width: 80%;margin: 0 0 5% 0;}
-    .portfolioContainer label{font-size: 0.9em;width: 17%}
-    .labelTypeAll{right: 69%}
-    .labelTypePortfolio{left: 69%}
-    .triangle-down{bottom: -57.8%;right: 33%}
+    .portfolioContainer{margin: 10% 0 5% 0;}
+    .portfolioContainer label{
+        font-size: 2em;
+        width: 25%;
+        height: 1.5%;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;}
+    .labelTypeAll{right: 76.9%}
+    .labelTypePortfolio{left: 76.9%}
+    .triangle-down{bottom: -47%;right: 31%;}
     .items{
         flex-direction: column;
         align-items: center;
-        margin: 20% 5% 20% 5%;
+        margin: 25% 5% 20% 5%;
     }
     .items li{width: 90%}
-    #contact{
-        width: 90%;
-        flex-direction: column;
-    }
-    #contact form{
-        position: initial;
-    }
+    #contact{width: 90%;flex-direction: column;}
+    #contact form{position: initial;font-size: 2em;}
+    #contact form input{font-size: 1em;}
+    #contact form textarea{font-size: 1em;}
+    #contact form button{font-size: 1em;}
 }
