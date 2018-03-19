@@ -110,6 +110,7 @@ ul, ol, li{
 }
 .bg1{
     z-index: 2;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -132,8 +133,20 @@ ul, ol, li{
 .innerBg h1{
     text-transform: uppercase;
 }
+.innerBgButton{
+    color: white;
+    width: 23%;
+    height: 40px;
+    background: #5cadd3;
+    border-radius: 5px;
+    border: 0;
+    border-bottom: solid 3px #4494bb;
+    }
+    .innerBgButton:hover{font-size: 0.8em;cursor: pointer}
+    .innerBgButton:focus{outline-style:none;}
 .bg2{
     position: absolute;
+    width: 100%;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -145,7 +158,18 @@ ul, ol, li{
 .bg2 img{
     width: 100%;
 }
+.viewBar{
+    transition: 650ms;
+    background: #4494bb;
+    width: 10%;
+    height: 4px;
+    position: absolute;
+    z-index: 2000;
+    bottom: 0;
+    left: 0;
+}
 #chevronRight:checked ~ .bg2{z-index: 100; opacity: 1;}
+#chevronRight:checked ~ .viewBar{left: 90%; z-index: 2000}
 #chevronLeft:checked ~ .bg1{z-index: 100; opacity: 1;}
 /*Nos Services*/
 #services{
@@ -282,6 +306,7 @@ ul, ol, li{
     display: none;
 }
 .portfolioContainer label{
+    transition: 500ms;
     background: #e5e5e5;
     cursor: pointer;
     width: 10%;
@@ -304,9 +329,7 @@ ul, ol, li{
     color: #fff;
     border-bottom: solid 3px #4494bb
 }
-.porfolioInput:checked + label .triangle-down{
-    display: initial;
-}
+.porfolioInput:checked + label .triangle-down{display: initial;}
 .items{
     display: flex;
     flex-direction: row;
@@ -317,6 +340,7 @@ ul, ol, li{
     margin: 7% 5% 0 5%;
 }
 .items li{
+    transition: 500ms;
     position: relative;
     width: 23%;
     margin: 1% 0;
@@ -467,6 +491,10 @@ footer a{
     .sectionDivider{
         margin: 5% 0;
     }
+    .innerBg{
+        width: 45%;
+    }
+    .innerBg h1{margin: 0}
     .mainServices {
         flex-direction: column;
         align-items: center;
@@ -512,6 +540,87 @@ footer a{
         width: 30%;
     }
 }
-@media all and (min-width: 320px) and (max-width: 767px){
-
+@media all and (min-width: 320px) and (max-width: 767px) {
+    body {padding-top: 30%;}
+    #accueil:target{padding-top: 25%;margin-top: -25%;}
+    #services:target{padding-top: 25%;margin-top: -25%;}
+    #projets:target{padding-top: 25%;margin-top: -25%;}
+    #contact:target{padding-top: 25%;margin-top: -25%;}
+    .sectionDivider{margin: 10% 0;}
+    .header nav {
+        width: 80%;
+        margin: 0 10% 0 10%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bg1{display: flex; align-items: center;text-align: center;}
+    .bg1 label{display: none;}
+    .bg1 img{display: none;}
+    .bg2 label{display: none}
+    .bg2 img{display: none}
+    .bg2 .innerBg{display: none}
+    .viewBar{display: none}
+    .innerBg h1 {margin: 0 0 2% 0;}
+    .innerBg p {display: none}
+    .innerBg{
+        width: 90%;
+        position: initial;
+        flex-direction: column;
+        align-items: center;
+        color: inherit;
+    }
+    .mainServices {
+        flex-direction: column;
+        align-items: center;
+    }
+    #services{margin-top: 10%}
+    #services p{
+        width: 80%;
+    }
+    .main1{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .main2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .subMain1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10% 0;
+    }
+    .subMain1 img {
+        margin: 0 0 1% 0;
+    }
+    .subMain2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subMain2 h3{margin: 0 0 2% 0;font-size: 1.5em;}
+    .subMain2 p{width: 80%;margin: 0;}
+    #projets p{width: 80%;margin: 0 0 5% 0;}
+    .portfolioContainer label{font-size: 0.9em;width: 17%}
+    .labelTypeAll{right: 69%}
+    .labelTypePortfolio{left: 69%}
+    .triangle-down{bottom: -57.8%;right: 33%}
+    .items{
+        flex-direction: column;
+        align-items: center;
+        margin: 20% 5% 20% 5%;
+    }
+    .items li{width: 90%}
+    #contact{
+        width: 90%;
+        flex-direction: column;
+    }
+    #contact form{
+        position: initial;
+    }
 }
