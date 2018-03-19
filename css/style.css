@@ -143,7 +143,7 @@ ul, ol, li{
     border: 0;
     border-bottom: solid 3px #4494bb;
     }
-.innerBgButton a{text-decoration: none}
+.innerBgButton a{text-decoration: none; color: #fff;}
 .innerBgButton a:visited{text-decoration: none}
     .innerBgButton:hover{font-size: 0.8em;cursor: pointer}
     .innerBgButton:focus{outline-style:none;}
