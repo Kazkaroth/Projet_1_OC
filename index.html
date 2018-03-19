@@ -2,17 +2,18 @@
 <html lang="fr">
 <head>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link rel="icon" type="image/png" href="webagency_images/images/ico/favicon.ico" />
+    <link rel="icon" type="image/png" href="webagency_images/images/ico/favicon.ico"/>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <title>Web Agency</title>
 </head>
 <body>
+<div id="acceuilAlpha" style="padding: 35%; margin: -35%"></div> <!-- décalage de la premiere ancre-->
 <header class="header">
     <nav class="navB">
         <img src="webagency_images/images/logo.png" alt="corpLogo">
         <ul>
-            <li><a href="#acceuil">Accueil</a></li>
+            <li><a href="#acceuilAlpha">Accueil</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#projets">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -28,6 +29,7 @@
         <div class="innerBg">
             <h1><span class="blueStyle">WebAgency</span>: L'agence de tous vos projets !</h1>
             <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser</p>
+            <button class="innerBgButton">Plus d'infos</button>
         </div>
         <label for="chevronRight" class="chevronRight"><span class="fas fa-chevron-circle-right fa-2x"></span></label>
     </div>
@@ -40,11 +42,8 @@
         </div>
         <!--<label for="chevronRight" class="chevronRight"><span class="fas fa-chevron-circle-right fa-2x"></span></label>-->
     </div>
+    <div class="viewBar"></div>
 </section>
-<!--Icone au dessus du txt en respo-->
-<!--espacé les titre et le contenu en respo-->
-<!--Réagencé les icone "Nos projet en respo-->
-
 <section id="services">
     <h1>Nos services</h1>
     <div class="sectionDivider">
@@ -114,9 +113,11 @@
         <input id="selectorCreative" name="radio-set" type="radio" class="porfolioInput selectorTypeCreative">
         <label for="selectorCreative" class="labelTypeCreative">Creative<span class="triangle-down"></span></label>
         <input id="selectorTypeCorporate" name="radio-set" type="radio" class="porfolioInput selectorTypeCorporate">
-        <label for="selectorTypeCorporate" class="labelTypeCorporate">Corporate<span class="triangle-down"></span></label>
+        <label for="selectorTypeCorporate" class="labelTypeCorporate">Corporate<span
+                class="triangle-down"></span></label>
         <input id="selectorTypePorfolio" name="radio-set" type="radio" class="porfolioInput selectorTypePorfolio">
-        <label for="selectorTypePorfolio" class="labelTypePortfolio">Portfolio<span class="triangle-down"></span></label>
+        <label for="selectorTypePorfolio" class="labelTypePortfolio">Portfolio<span
+                class="triangle-down"></span></label>
         <ul class="items">
             <li class="itemType1">
                 <a href="#">
@@ -203,7 +204,10 @@
     </div>
 </section>
 <section id="contact">
-    <iframe class="interactiveMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10496.674791890118!2d2.3484175652266264!3d48.87406051277832!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1521452319062" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>    <form action="action.php">
+    <iframe class="interactiveMap"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10496.674791890118!2d2.3484175652266264!3d48.87406051277832!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1521452319062"
+            width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <form action="action.php">
         <h3>Contact Info</h3>
         <h6>WebAgency SAS</h6>
         <p>25 rue d'Hauteville 75010 Paris</p>
