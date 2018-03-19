@@ -84,6 +84,7 @@ ul, ol, li{
     position: relative;
     max-width: 100%;
     width: 100%;
+    margin-bottom: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
