@@ -84,7 +84,7 @@ ul, ol, li{
     position: relative;
     max-width: 100%;
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -470,7 +470,10 @@ footer a{
         bottom: -40%;
     }
 }
-@media all and (min-width: 1024px) and (max-width: 1259px) {
+@media all and (min-width: 1024px) and (max-width: 1259px){
+    #services:target{padding-top: 5%;margin-top: -5%;}
+    #projets:target{padding-top: 5%;margin-top: -5%;}
+    #contact:target{padding-top: 5%;margin-top: -5%;}
     .triangle-down {
         bottom: -47%;
         right: 35%;
@@ -574,7 +577,7 @@ footer a{
         width: 48%;
     }
 }
-@media all and (min-width: 320px) and (max-width: 767px) {
+@media all and (min-width: 320px) and (max-width: 767px){
     body {padding-top: 30%;}
     #accueil:target{padding-top: 25%;margin-top: -25%;}
     #services:target{padding-top: 25%;margin-top: -25%;}
@@ -658,7 +661,7 @@ footer a{
         position: initial;
     }
 }
-@media all and (min-device-width: 320px) and (max-device-width: 767px) {
+@media all and (min-device-width: 320px) and (max-device-width: 767px){
     body {padding-top: 30%;}
     #accueil:target{padding-top: 20%;margin-top: -20%;}
     #services:target{padding-top: 20%;margin-top: -20%;}
