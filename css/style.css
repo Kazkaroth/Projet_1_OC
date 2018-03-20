@@ -33,7 +33,7 @@ ul, ol, li{
     margin: 0 0 48% 0;
     font-family: "Comic Sans MS"/*LOL*/, sans-serif;
 }
-/*NavB*/
+/*Header /NavB*/
 .header{
     z-index: 3000;
     position: fixed;
@@ -143,10 +143,9 @@ ul, ol, li{
     border: 0;
     border-bottom: solid 3px #4494bb;
     }
-.innerBgButton a{text-decoration: none; color: #fff;}
-.innerBgButton a:visited{text-decoration: none}
-    .innerBgButton:hover{font-size: 0.8em;cursor: pointer}
-    .innerBgButton:focus{outline-style:none;}
+.innerBgButton a{text-decoration: none; color: white}
+.innerBgButton:hover{font-size: 0.8em;cursor: pointer}
+.innerBgButton:focus{outline-style:none;}
 .bg2{
     position: absolute;
     width: 100%;
@@ -453,7 +452,7 @@ form button{
     border: 0;
     border-bottom: solid 3px #4494bb;
     }
-/*form button:hover{font-size: 0.9em;}*/
+form button:active{font-size: 0.6em;}
 form button:focus{outline-style:none;}
 /*footer*/
 footer{
@@ -479,6 +478,38 @@ footer a{
     .sectionDivider{
         margin: 5% 0;
     }
+    .items{margin: 10% 5% 0 5%;}
+    .items li{width: 30%;}
+    .mainServices {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main1{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .main2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .subMain1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10% 0;
+    }
+    .subMain1 img {margin: 0 0 1% 0;}
+    .subMain2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subMain2 h3{margin: 0 0 2% 0;font-size: 1.5em;}
+    .subMain2 p{width: 80%;margin: 0;}
 }
 @media all and (min-width: 768px) and (max-width: 1023px){
     body{
