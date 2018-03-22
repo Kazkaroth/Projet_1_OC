@@ -1,17 +1,43 @@
-<!DOCTYPE html>
+<!DOCTYPE html xmlns:og="http://ogp.me/ns#">
 <html lang="fr">
 <head>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link rel="icon" type="image/png" href="webagency_images/images/ico/favicon.ico"/>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <title>Web Agency</title>
+    <meta name="description" content="La WebAgency est une agence proposant a ses clients de travailler sur leurs projets web: Mise a jour, création et/ou optimisation de site, etc...">
+    <!--Twitter Card Meta-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://kazkaroth.github.io/Projet_1_OC/">
+    <meta name="twitter:title" content="Web Agency">
+    <meta name="twitter:description" content="La WebAgency est une agence proposant a ses clients de travailler sur leurs projets web: Mise a jour, création et/ou optimisation de site, etc...">
+    <meta name="twitter:url" content="https://kazkaroth.github.io/Projet_1_OC/" />
+    <meta name="twitter:image:src" content="../webagency_images/images/slider/bg1.jpg">
+    <!--Open Graph Meta-->
+    <meta property="og:title" content="Web Agency" />
+    <meta property="og:type" content="text/html" />
+    <meta property="og:url" content="https://kazkaroth.github.io/Projet_1_OC/" />
+    <meta property="og:site_name" content="Web Agency" />
+    <meta property="og:image" content="../webagency_images/images/slider/bg1.jpg" />
+    <meta property="og:description" content="La WebAgency est une agence proposant a ses clients de travailler sur leurs projets web: Mise a jour, création et/ou optimisation de site, etc..." />
+    <meta property="author" content="G.b" />
+
+    <link rel="icon" type="image/png" href="webagency_images/images/ico/favicon.ico"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<!--Baissez la div des images portfolio CHECK-->
+<!--rajoutez l'icone d'oeil sur les image du portfolio CHECK-->
+<!--rajoutez un deuxième bouton sur la deuxième image du slider CHECK-->
+<!--augmenté la largeur des texte  Nos service a 100% CHECK-->
+<!--rempolacé le lorem ipsum-->
+<!--passez le code HTML ET CSS au validteur-->
+<!--Améliorez le référencement: ajoutez une déscription et vérifiez la sémentique ET LES ALT
+    Ajouté les métatag réseaux sociaux CHECK
+    -->
+
 <body>
-<div id="acceuilAlpha" style="padding: 35%; margin: -35%"></div> <!-- décalage de la premiere ancre-->
+<div id="acceuilAlpha"></div> <!-- décalage de la premiere ancre-->
 <header class="header">
     <nav class="navB">
-        <img src="webagency_images/images/logo.png" alt="corpLogo">
+        <img src="webagency_images/images/logo.png" alt="Corporation logo">
         <ul>
             <li><a href="#acceuilAlpha">Accueil</a></li>
             <li><a href="#services">Services</a></li>
@@ -35,73 +61,71 @@
     </div>
     <div class="bg2">
         <label for="chevronLeft" class="chevronLeft"><span class="fas fa-chevron-circle-left fa-2x"></span></label>
-        <img src="webagency_images/images/slider/bg2.jpg" alt="">
+        <img src="webagency_images/images/slider/bg2.jpg" alt="children who screaming">
         <div class="innerBg">
-            <h1><span class="blueStyle">WebAgency</span>: Des années d'expèriences a votre service</h1>
+            <h2><span class="blueStyle">WebAgency</span>: Des années d'expèriences a votre service</h2>
             <p>Bénéficiez de l'expertise de nos T1000, fluides et déterminés</p>
+            <button class="innerBgButton"><a href="#services">Plus d'infos</a></button>
         </div>
         <!--<label for="chevronRight" class="chevronRight"><span class="fas fa-chevron-circle-right fa-2x"></span></label>-->
     </div>
     <div class="viewBar"></div>
 </section>
 <section id="services">
-    <h1>Nos services</h1>
+    <h2>Nos services</h2>
     <div class="sectionDivider">
         <div class="divider"></div>
         <span class="bluePoint">.</span>
         <div class="divider"></div>
     </div>
-    <p>Lorem ipsum dolor sit amet,
+    <p class="serviceMainP">Lorem ipsum dolor sit amet,
         consectetur adipisicing elit.
         Blanditiis labore perferendis
         ratione sunt tempore!Lorem ipsum dolor sit amet,
         consectetur adipisicing elit.</p>
     <div class="mainServices">
         <article class="main1">
-            <img src="webagency_images/images/main-feature.png" alt="">
+            <img src="webagency_images/images/main-feature.png" alt="Computer">
         </article>
         <article class="main2">
             <div class="subMain1">
-                <img src="webagency_images/images/servicesico/1.png" alt="">
+                <img src="webagency_images/images/servicesico/1.png" alt="UX icon">
                 <div class="subMain2">
                     <h3>UX design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias beatae cum cupiditate expedita
+                    <p class="serviceSecondP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias beatae cum cupiditate expedita
                         hic
                         non, odit quam repellendus veniam. Animi beatae consectetur eaque explicabo inventore iste
                         laboriosam placeat ullam.</p>
                 </div>
             </div>
             <div class="subMain1">
-                <img src="webagency_images/images/servicesico/1.png" alt="">
+                <img src="webagency_images/images/servicesico/1.png" alt="UI icon">
                 <div class="subMain2">
                     <h3>UI design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias beatae cum cupiditate expedita
+                    <p class="serviceSecondP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias beatae cum cupiditate expedita
                         hic
                         non, odit quam repellendus veniam. Animi beatae consectetur eaque explicabo inventore iste
                         laboriosam placeat ullam.</p>
                 </div>
             </div>
             <div class="subMain1">
-                <img src="webagency_images/images/servicesico/3.png" alt="">
+                <img src="webagency_images/images/servicesico/3.png" alt="SEO icon">
                 <div class="subMain2">
                     <h3>SEO</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias beatae cum cupiditate expedita
-                        hic
-                        non, odit quam repellendus veniam. Animi beatae consectetur eaque explicabo inventore iste
-                        laboriosam placeat ullam.</p>
+                    <p class="serviceSecondP">Nos équipes au sein du service "Search Engine Marketing" vous proposerons un audit SEO de qualité, pour une référencement naturel toujours plus éfficace.</p>
                 </div>
             </div>
         </article>
     </div>
 </section>
 <section id="projets">
-    <h1>Nos projets</h1>
+    <h2>Nos projets</h2>
     <div class="sectionDivider">
         <div class="divider"></div>
         <span class="bluePoint">.</span>
         <div class="divider"></div>
     </div>
-    <p>Lorem ipsum dolor sit amet,
+    <p class="projetP">Lorem ipsum dolor sit amet,
         consectetur adipisicing elit.
         Blanditiis labore perferendis
         ratione sunt tempore!Lorem ipsum dolor sit amet,
@@ -121,8 +145,11 @@
         <ul class="items">
             <li class="itemType1">
                 <a href="#">
-                    <img src="webagency_images/images/portfolio/01.jpg" alt="">
+                    <img src="webagency_images/images/portfolio/01.jpg" alt="a nose with sunglasses">
                     <div class="liHover">
+                        <div class="circlingEye">
+                            <span class="fas fa-eye"></span>
+                        </div>
                         <h4 class="liHoverH4">Creative Item 1</h4>
                         <p class="liHoverP">Lorem Ipsum Dolor Sit</p>
                     </div>
@@ -130,8 +157,11 @@
             </li>
             <li class="itemType1">
                 <a href="">
-                    <img src="webagency_images/images/portfolio/02.jpg" alt="">
+                    <img src="webagency_images/images/portfolio/02.jpg" alt="Colored Rabbit">
                     <div class="liHover">
+                        <div class="circlingEye">
+                            <span class="fas fa-eye"></span>
+                        </div>
                         <h4 class="liHoverH4">Creative Item 2</h4>
                         <p class="liHoverP">Lorem Ipsum Dolor Sit</p>
                     </div>
@@ -139,8 +169,11 @@
             </li>
             <li class="itemType1">
                 <a href="">
-                    <img src="webagency_images/images/portfolio/03.jpg" alt="">
+                    <img src="webagency_images/images/portfolio/03.jpg" alt="Pompadour's Logo">
                     <div class="liHover">
+                        <div class="circlingEye">
+                            <span class="fas fa-eye"></span>
+                        </div>
                         <h4 class="liHoverH4">Creative Item 3</h4>
                         <p class="liHoverP">Lorem Ipsum Dolor Sit</p>
                     </div>
@@ -148,8 +181,11 @@
             </li>
             <li class="itemType2">
                 <a href="">
-                    <img src="webagency_images/images/portfolio/04.jpg" alt="">
+                    <img src="webagency_images/images/portfolio/04.jpg" alt="A model on a sheet">
                     <div class="liHover">
+                        <div class="circlingEye">
+                            <span class="fas fa-eye"></span>
+                        </div>
                         <h4 class="liHoverH4">Corporate Item 1</h4>
                         <p class="liHoverP">Lorem Ipsum Dolor Sit</p>
                     </div>
@@ -157,8 +193,11 @@
             </li>
             <li class="itemType2">
                 <a href="">
-                    <img src="webagency_images/images/portfolio/05.jpg" alt="">
+                    <img src="webagency_images/images/portfolio/05.jpg" alt="Two shopping bag, one white, the other are black">
                     <div class="liHover">
+                        <div class="circlingEye">
+                            <span class="fas fa-eye"></span>
+                        </div>
                         <h4 class="liHoverH4">Corporate Item 2</h4>
                         <p class="liHoverP">Lorem Ipsum Dolor Sit</p>
                     </div>
@@ -166,8 +205,11 @@
             </li>
             <li class="itemType2">
                 <a href="">
-                    <img src="webagency_images/images/portfolio/06.jpg" alt="">
+                    <img src="webagency_images/images/portfolio/06.jpg" alt="Part of a city">
                     <div class="liHover">
+                        <div class="circlingEye">
+                            <span class="fas fa-eye"></span>
+                        </div>
                         <h4 class="liHoverH4">Corporate Item 3</h4>
                         <p class="liHoverP">Lorem Ipsum Dolor Sit</p>
                     </div>
@@ -175,8 +217,11 @@
             </li>
             <li class="itemType3">
                 <a href="">
-                    <img src="webagency_images/images/portfolio/07.jpg" alt="">
+                    <img src="webagency_images/images/portfolio/07.jpg" alt="A rocket launch">
                     <div class="liHover">
+                        <div class="circlingEye">
+                            <span class="fas fa-eye"></span>
+                        </div>
                         <h4 class="liHoverH4">Porfolio Item 1</h4>
                         <p class="liHoverP">Lorem Ipsum Dolor Sit</p>
                     </div>
@@ -184,8 +229,11 @@
             </li>
             <li class="itemType3">
                 <a href="">
-                    <img src="webagency_images/images/portfolio/08.jpg" alt="">
+                    <img src="webagency_images/images/portfolio/08.jpg" alt="Some desktop tool">
                     <div class="liHover">
+                        <div class="circlingEye">
+                            <span class="fas fa-eye"></span>
+                        </div>
                         <h4 class="liHoverH4">Porfolio Item 2</h4>
                         <p class="liHoverP">Lorem Ipsum Dolor Sit</p>
                     </div>
@@ -193,8 +241,11 @@
             </li>
             <li class="itemType3">
                 <a href="">
-                    <img src="webagency_images/images/portfolio/full.jpg" alt="">
+                    <img src="webagency_images/images/portfolio/full.jpg" alt="A burger">
                     <div class="liHover">
+                        <div class="circlingEye">
+                            <span class="fas fa-eye"></span>
+                        </div>
                         <h4 class="liHoverH4">Porfolio Item 3</h4>
                         <p class="liHoverP">Lorem Ipsum Dolor Sit</p>
                     </div>
@@ -222,5 +273,7 @@
 <footer>
     <p>©2018 to ∞ - <a href="#acceuil"><span class="blueStyle">WebAgency</span></a> - All rights reserved.</p>
 </footer>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </body>
 </html>
