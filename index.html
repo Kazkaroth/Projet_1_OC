@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" xmlns:og="http://ogp.me/ns#">
+<html lang="fr" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <title>Web Agency</title>
@@ -10,29 +10,17 @@
     <meta name="twitter:title" content="Web Agency">
     <meta name="twitter:description" content="La WebAgency est une agence proposant a ses clients de travailler sur leurs projets web: Mise a jour, création et/ou optimisation de site, etc...">
     <meta name="twitter:url" content="https://kazkaroth.github.io/Projet_1_OC/" />
-    <meta name="twitter:image:src" content="../webagency_images/images/slider/bg1.jpg">
+    <meta name="twitter:image:url" content="webagency_images/images/slider/bg1.jpg">
     <!--Open Graph Meta-->
     <meta property="og:title" content="Web Agency" />
     <meta property="og:type" content="text/html" />
     <meta property="og:url" content="https://kazkaroth.github.io/Projet_1_OC/" />
-    <meta property="og:site_name" content="Web Agency" />
     <meta property="og:image" content="../webagency_images/images/slider/bg1.jpg" />
+    <meta property="og:locale" content="fr_FR" />
     <meta property="og:description" content="La WebAgency est une agence proposant a ses clients de travailler sur leurs projets web: Mise a jour, création et/ou optimisation de site, etc..." />
-    <meta property="author" content="G.b" />
-
     <link rel="icon" type="image/png" href="webagency_images/images/ico/favicon.ico"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<!--Baissez la div des images portfolio CHECK-->
-<!--rajoutez l'icone d'oeil sur les image du portfolio CHECK-->
-<!--rajoutez un deuxième bouton sur la deuxième image du slider CHECK-->
-<!--augmenté la largeur des texte  Nos service a 100% CHECK-->
-<!--rempolacé le lorem ipsum-->
-<!--passez le code HTML ET CSS au validteur-->
-<!--Améliorez le référencement: ajoutez une déscription et vérifiez la sémentique ET LES ALT
-    Ajouté les métatag réseaux sociaux CHECK
-    -->
-
 <body>
 <div id="acceuilAlpha"></div> <!-- décalage de la premiere ancre-->
 <header class="header">
@@ -55,7 +43,7 @@
         <div class="innerBg">
             <h1><span class="blueStyle">WebAgency</span>: L'agence de tous vos projets !</h1>
             <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser</p>
-            <button class="innerBgButton"><a href="#projets">Plus d'infos</a></button>
+            <a href="#projets"><button class="innerBgButton">Plus d'infos</button></a>
         </div>
         <label for="chevronRight" class="chevronRight"><span class="fas fa-chevron-circle-right fa-2x"></span></label>
     </div>
@@ -65,7 +53,7 @@
         <div class="innerBg">
             <h2><span class="blueStyle">WebAgency</span>: Des années d'expèriences a votre service</h2>
             <p>Bénéficiez de l'expertise de nos T1000, fluides et déterminés</p>
-            <button class="innerBgButton"><a href="#services">Plus d'infos</a></button>
+            <a href="#services"><button class="innerBgButton">Plus d'infos</button></a>
         </div>
         <!--<label for="chevronRight" class="chevronRight"><span class="fas fa-chevron-circle-right fa-2x"></span></label>-->
     </div>
@@ -84,10 +72,10 @@
         ratione sunt tempore!Lorem ipsum dolor sit amet,
         consectetur adipisicing elit.</p>
     <div class="mainServices">
-        <article class="main1">
+        <div class="main1">
             <img src="webagency_images/images/main-feature.png" alt="Computer">
-        </article>
-        <article class="main2">
+        </div>
+        <div class="main2">
             <div class="subMain1">
                 <img src="webagency_images/images/servicesico/1.png" alt="UX icon">
                 <div class="subMain2">
@@ -115,7 +103,7 @@
                     <p class="serviceSecondP">Nos équipes au sein du service "Search Engine Marketing" vous proposerons un audit SEO de qualité, pour une référencement naturel toujours plus éfficace.</p>
                 </div>
             </div>
-        </article>
+        </div>
     </div>
 </section>
 <section id="projets">
@@ -253,11 +241,10 @@
             </li>
         </ul>
     </div>
+    <!--osvicos-->
 </section>
 <section id="contact">
-    <iframe class="interactiveMap"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10496.674791890118!2d2.3484175652266264!3d48.87406051277832!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1521452319062"
-            width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe class="interactiveMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10496.674791890118!2d2.3484175652266264!3d48.87406051277832!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1521452319062" allowfullscreen></iframe>
     <form action="action.php">
         <h3>Contact Info</h3>
         <h6>WebAgency SAS</h6>
