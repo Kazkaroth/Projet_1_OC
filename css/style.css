@@ -196,6 +196,7 @@ ul, ol, li{
     font-size: 2em;
     text-transform: uppercase;
     margin: 5% 0 0 0;
+    width: 90%;
 }
 .serviceMainP{width: 60%}
 .serviceSecondP {
@@ -271,6 +272,7 @@ ul, ol, li{
     font-size: 2em;
     text-transform: uppercase;
     margin: 5% 0 0 0;
+    width: 90%;
 }
 .projetP{
     width: 55%;
