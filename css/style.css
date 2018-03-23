@@ -139,12 +139,16 @@ ul, ol, li{
 .innerBg h2{text-transform: uppercase}
 .innerBgButton{
     color: white;
-    width: 23%;
-    height: 40px;
+    width: 25%;
+    /* height: 40px; */
+    padding: 2%;
     background: #5cadd3;
     border-radius: 5px;
     border: 0;
     border-bottom: solid 3px #4494bb;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
     }
 .innerBgButton a{text-decoration: none; color: white}
 .innerBgButton:hover{transform: scale(1.1);cursor: pointer}
@@ -548,8 +552,10 @@ footer a{
     .innerBg{
         width: 45%;
     }
-    .innerBg h1{margin: 0}
-    .innerBg h2{margin: 0}
+    .innerBg h1{margin: 0; font-size: 1.3em}
+    .innerBg h2{margin: 0; font-size: 1.3em}
+    .innerBg p{font-size: 1.1em}
+    .innerBgButton{width: 30%;}
     .mainServices {
         flex-direction: column;
         align-items: center;
@@ -632,7 +638,7 @@ footer a{
         align-items: center;
         color: inherit;
     }
-    .innerBgButton{width: 100%}
+    .innerBgButton{width: 32%}
     .mainServices {
         flex-direction: column;
         align-items: center;
@@ -728,9 +734,8 @@ footer a{
         color: inherit;
     }
     .innerBgButton {
-        width: 100%;
+        width: 32%;
         font-size: 2em;
-        height: 90px;
         text-decoration: none;
         }
     .innerBgButton a{color: white}
