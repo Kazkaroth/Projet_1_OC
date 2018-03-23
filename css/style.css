@@ -698,7 +698,7 @@ footer a{
     }
 }
 @media all and (min-device-width: 320px) and (max-device-width: 767px){
-    body {padding-top: 30%; align-items: center}
+    body {padding-top: 30%;}
     #accueil:target{padding-top: 20%;margin-top: -20%;}
     #services:target{padding-top: 20%;margin-top: -20%;}
     #projets:target{padding-top: 20%;margin-top: -20%;}
@@ -810,7 +810,7 @@ footer a{
         margin: 0 0 0 1%;
         font-size: 1.5em;
     }
-    #contact{width: 90%;flex-direction: column;}
+    #contact{width: 90%;flex-direction: column;align-self: center;}
     #contact form{position: initial;font-size: 2em; background: rgba(0,0,0,0.9); color: #fff}
     #contact form input{font-size: 1em;}
     #contact form textarea{font-size: 1em;}
