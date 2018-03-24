@@ -33,6 +33,7 @@ ul, ol, li{
     font-family: "Comic Sans MS"/*LOL*/, sans-serif;
 }
 #acceuilAlpha{padding: 35%; margin: -35%; width: 0;}
+
 /*Header /NavB*/
 .header{
     z-index: 3000;
@@ -72,6 +73,7 @@ ul, ol, li{
     border-top: 3px solid #5cadd3;
     padding-top: 15px;
 }
+
 /*Acceuil*/
 .blueStyle{
     color: #5cadd3;
@@ -180,6 +182,7 @@ ul, ol, li{
 #chevronRight:checked ~ .bg2{z-index: 100; opacity: 1;}
 #chevronRight:checked ~ .viewBar{left: 90%; z-index: 2000}
 #chevronLeft:checked ~ .bg1{z-index: 100; opacity: 1;}
+
 /*Nos Services*/
 #services{
     display: flex;
@@ -278,6 +281,7 @@ ul, ol, li{
     width: 55%;
     margin: 0;
 }
+
     /*Nos Projets / Portfolio*/
 .portfolioContainer{
     display: flex;
@@ -408,6 +412,7 @@ ul, ol, li{
 .selectorTypeCorporate:checked ~ .items .itemType3{transition: 450ms;opacity: 0.2;}
 .selectorTypePorfolio:checked ~ .items .itemType1{transition: 450ms;opacity: 0.2;}
 .selectorTypePorfolio:checked ~ .items .itemType2{transition: 450ms;opacity: 0.2;}
+
 /*Contact*/
 #contact{
     background-color: #5cadd3;
@@ -424,7 +429,7 @@ ul, ol, li{
 }
 form{
     background: rgba(255,255,255, 0.85);
-    color: #000;
+    color: #848484;
     position: absolute;
     right: 10%;
     bottom: 17%;
@@ -432,6 +437,8 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 8px;
+    margin: 1%;
 }
 form h3{
     align-self: flex-start;
@@ -464,11 +471,13 @@ form textarea{
     width: 90%;
     max-width: 90%;
     min-width: 90%;
+    font-family: roboto, Arial, sans-serif;
+    resize: none;
 }
 form button{
     align-self: flex-start;
-    margin: 3%;
-    padding: 2%;
+    margin: 7px;
+    padding: 8px;
     color: white;
     width: 50%;
     background: #5cadd3;
@@ -477,8 +486,8 @@ form button{
     border-bottom: solid 3px #4494bb;
     }
 form button:hover{transform: scale(0.9);}
-form button:active{font-size: 0.6em;}
 form button:focus{outline-style:none;}
+
 /*footer*/
 footer{
     margin: 1% 0 0.5% 0;
@@ -489,6 +498,7 @@ footer{
 footer a{
     text-decoration: none;
 }
+
 /*MediaQ*/
 @media all and (max-width: 1440px) {
     .triangle-down{
@@ -695,8 +705,9 @@ footer a{
     }
     #contact form{
         position: initial;
-        background: rgba(0,0,0, 0.95);
-        color: #fff;
+        background: rgb(222, 222, 222);
+        color: #000;
+        margin: 0;
     }
 }
 @media all and (min-device-width: 320px) and (max-device-width: 767px){
@@ -813,8 +824,16 @@ footer a{
         font-size: 1.5em;
     }
     #contact{width: 90%;flex-direction: column;align-self: center;}
-    #contact form{position: initial;font-size: 2em; background: rgba(0,0,0,0.9); color: #fff}
+    #contact form{
+        position: initial;
+        background: rgb(222, 222, 222);
+        color: #000;
+        margin: 0;}
     #contact form input{font-size: 1em;}
     #contact form textarea{font-size: 1em;}
-    #contact form button{font-size: 1em;}
+    #contact form button{
+        font-size: 1em;
+        margin: 8px 8px 8px 27px;
+        width: 18%;
+    }
 }
