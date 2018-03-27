@@ -122,7 +122,7 @@ ul, ol, li{
     align-items: flex-start;
     position: relative;
     opacity: 0;
-    transition: 650ms;
+    transition: 850ms;
 }
 .bg1 img{
     width: 100%;
@@ -164,13 +164,13 @@ ul, ol, li{
     justify-content: space-around;
     align-items: flex-start;
     opacity: 0;
-    transition: 650ms;
+    transition: 850ms;
 }
 .bg2 img{
     width: 100%;
 }
 .viewBar{
-    transition: 650ms;
+    transition: 1000ms ease;
     background: #4494bb;
     width: 10%;
     height: 4px;
@@ -179,10 +179,10 @@ ul, ol, li{
     bottom: 0;
     left: 0;
 }
+/**/
 #chevronRight:checked ~ .bg2{z-index: 100; opacity: 1;}
-#chevronRight:checked ~ .viewBar{left: 90%; z-index: 2000}
+#chevronRight:checked ~ .viewBar{left: 90%; z-index: 2000;}
 #chevronLeft:checked ~ .bg1{z-index: 100; opacity: 1;}
-
 /*Nos Services*/
 #services{
     display: flex;
@@ -249,6 +249,32 @@ ul, ol, li{
     align-items: center;
     justify-content: flex-start;
 }
+.circlingIco{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: solid 1px #d9d9d9;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+}
+.circlingIco .circlingImg{
+    color: #5cadd3;
+    position: absolute;
+    left: 21%;
+    transform: scale(0.75);
+}
+.circlingIco .bluePoint2{
+    transform: scale(5.3);
+    font-family: "Comic Sans MS", sans-serif;
+    color: #5cadd3;
+    position: absolute;
+    bottom: 88%;
+    left: 95%;
+}
 .subMain1 img{
     margin: 15% 2% 0 0;
 }
@@ -256,6 +282,7 @@ ul, ol, li{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 90%;
 }
 /*Nos Projets*/
 #projets{
@@ -548,6 +575,7 @@ footer a{
     }
     .subMain2 h3{margin: 0 0 2% 0;font-size: 1.5em;}
     .subMain2 p{width: 80%;margin: 0;}
+    .circlingIco{margin: 0 0 2% 0}
 }
 @media all and (min-width: 768px) and (max-width: 1023px){
     body{
@@ -657,7 +685,7 @@ footer a{
         flex-direction: column;
         align-items: center;
     }
-    #services{margin-top: 10%}
+    #services{margin-top: 10%;margin-bottom: 17%;}
     #services p{
         width: 80%;
     }
@@ -689,6 +717,7 @@ footer a{
     }
     .subMain2 h3{margin: 0 0 2% 0;font-size: 1.5em;}
     .subMain2 p{width: 80%;margin: 0;}
+    .circlingIco{margin: 0 0 2% 0}
     .projetP {width: 80%;margin: 0 0 5% 0;}
     .portfolioContainer label{font-size: 0.9em;width: 21%}
     .labelTypeAll{right: 73%}
@@ -796,6 +825,10 @@ footer a{
     }
     .subMain2 h3{margin: 0 0 2% 0;font-size: 1.5em;}
     .subMain2 p{width: 80%;margin: 0;}
+    .circlingIco{
+        transform: scale(1.5);
+        margin-bottom: 3%;
+    }
     .projetP {width: 80%;margin: 0 0 5% 0;}
     .portfolioContainer{margin: 10% 0 5% 0;}
     .portfolioContainer label{
@@ -832,7 +865,7 @@ footer a{
         position: initial;
         background: rgb(222, 222, 222);
         color: #000;
-        margin: 0;
+        margin: -1px;
         padding: 0;}
     #contact form input{font-size: 1em;}
     #contact form textarea{font-size: 1em;}
