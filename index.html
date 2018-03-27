@@ -1,272 +1,877 @@
-<!DOCTYPE html>
-<html lang="fr" prefix="og: http://ogp.me/ns#">
-<head>
-    <meta charset="UTF-8">
-    <title>Web Agency</title>
-    <meta name="description" content="La WebAgency est une agence proposant a ses clients de travailler sur leurs projets web: Mise a jour, création et/ou optimisation de site, etc...">
-    <!--Twitter Card Meta-->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="https://kazkaroth.github.io/Projet_1_OC/">
-    <meta name="twitter:title" content="Web Agency">
-    <meta name="twitter:description" content="La WebAgency est une agence proposant a ses clients de travailler sur leurs projets web: Mise a jour, création et/ou optimisation de site, etc...">
-    <!--Open Graph Meta-->
-    <meta property="og:title" content="Web Agency" />
-    <meta property="og:type" content="text/html" />
-    <meta property="og:url" content="https://kazkaroth.github.io/Projet_1_OC/" />
-    <meta property="og:image" content="webagency_images/images/slider/bg1.jpg" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:description" content="La WebAgency est une agence proposant a ses clients de travailler sur leurs projets web: Mise a jour, création et/ou optimisation de site, etc..." />
+/*General*/
+@font-face {
+    font-family: roboto;
+    src: url("../webagency_images/fonts/Roboto-black.ttf") format("ttf");
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    font-family: roboto, sans-serif;
+    padding-top: 5%;
+}
+ul, ol, li{
+    list-style: none;
+}
+.sectionDivider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    margin: 3% 0;
+}
+.divider{
+    border-top: 2px solid #ebebeb;
+    border-radius: 5px;
+    width: 75px;
+}
+.bluePoint{
+    color: #5cadd3;
+    font-size: 6em;
+    margin: 0 0 48% 0;
+    font-family: "Comic Sans MS"/*LOL*/, sans-serif;
+}
+#acceuilAlpha{padding: 35%; margin: -35%; width: 0;}
 
-    <link rel="icon" type="image/png" href="webagency_images/images/ico/favicon.ico"/>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<div id="acceuilAlpha"></div> <!-- décalage de la premiere ancre-->
-<header class="header">
-    <nav class="navB">
-        <img src="webagency_images/images/logo.png" alt="Corporation logo">
-        <ul>
-            <li><a href="#acceuilAlpha">Accueil</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projets">Portfolio</a></li>
-            <li><a href="#contactAlpha">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<section id="acceuil">
-    <input id="chevronLeft" type="radio" name="slider" checked="checked">
-    <input id="chevronRight" type="radio" name="slider">
-    <div class="bg1">
-        <!--<label for="chevronLeft" class="chevronLeft"><span class="fas fa-chevron-circle-left fa-2x"></span></label>-->
-        <img src="webagency_images/images/slider/bg1.jpg" alt="children who painting">
-        <div class="innerBg">
-            <h1><span class="blueStyle">WebAgency</span>: L'agence de tous vos projets !</h1>
-            <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser.</p>
-            <a href="#projets" class="innerBgButton">Plus d'infos</a>
-        </div>
-        <label for="chevronRight" class="chevronRight"><span class="fas fa-chevron-circle-right fa-2x"></span></label>
-    </div>
-    <div class="bg2">
-        <label for="chevronLeft" class="chevronLeft"><span class="fas fa-chevron-circle-left fa-2x"></span></label>
-        <img src="webagency_images/images/slider/bg2.jpg" alt="children who screaming">
-        <div class="innerBg">
-            <h2><span class="blueStyle">WebAgency</span>: Des années d'expèriences a votre service.</h2>
-            <p>Bénéficiez de l'experience de nos experts pour réaliser vos projets dans les meilleurs conditions.</p>
-            <a href="#services" class="innerBgButton">Plus d'infos</a>
-        </div>
-        <!--<label for="chevronRight" class="chevronRight"><span class="fas fa-chevron-circle-right fa-2x"></span></label>-->
-    </div>
-    <div class="viewBar">
-        <div class="innerViewBar"></div>
-    </div>
-</section>
-<section id="services">
-    <h2>Nos services</h2>
-    <div class="sectionDivider">
-        <div class="divider"></div>
-        <span class="bluePoint">.</span>
-        <div class="divider"></div>
-    </div>
-    <p class="serviceMainP">La <span class="blueStyle">WebAgency</span> vous propose
-        ses services experts pour réaliser tous vos projets numériques, de la refonte
-        graphique de votre site déjà existant, a la création de votre projet pas à pas.</p>
-    <div class="mainServices">
-        <div class="main1">
-            <img src="webagency_images/images/main-feature.png" alt="Computer">
-        </div>
-        <div class="main2">
-            <div class="subMain1">
-                <div class="circlingIco">
-                    <span class="fas fa-chart-line fa-2x circlingImg"></span>
-                    <span class="bluePoint2">.</span>
-                </div>
-                <div class="subMain2">
-                    <h3>UX design</h3>
-                    <p class="serviceSecondP">Nous réalisons nos propres études de marché,
-                        pour chacun de vos projets individuellement, dans le but d'offrir
-                        à votre clientèle cible la meilleure expérience utilisateur possible.</p>
-                </div>
-            </div>
-            <div class="subMain1">
-                <div class="circlingIco">
-                    <span class="fas fa-cubes fa-2x circlingImg"></span>
-                    <span class="bluePoint2">.</span>
-                </div>
-                <div class="subMain2">
-                    <h3>UI design</h3>
-                    <p class="serviceSecondP">L'interface utilisateur (UI) est un art,
-                        que nous prenons à coeur de soigner, usant de toutes nos ressources,
-                        pour offrir à vos visiteurs un maximum de confort d'utilisation.</p>
-                </div>
-            </div>
-            <div class="subMain1">
-                <div class="circlingIco">
-                    <span class="fas fa-chart-pie fa-2x circlingImg"></span>
-                    <span class="bluePoint2">.</span>
-                </div>
-                <div class="subMain2">
-                    <h3>SEO</h3>
-                    <p class="serviceSecondP">Nos équipes au sein du service "search Engine marketing"
-                        vous proposera un audit SEO de qualité, pour un référencement naturel toujours
-                        plus efficace, et vous guiderons lors d'audits SEA si vous souhaitez renforcer
-                        votre référencement.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="projets">
-    <h2>Nos projets</h2>
-    <div class="sectionDivider">
-        <div class="divider"></div>
-        <span class="bluePoint">.</span>
-        <div class="divider"></div>
-    </div>
-    <p class="projetP">La <span class="blueStyle">WebAgency</span> c'est plusieurs années d'expérience
-        qui nous ont offert l'honneur de travailler sur des projets plus différents les uns que les autres.</p>
-    <div class="portfolioContainer">
-        <input id="selectorTypeAll" name="radio-set" type="radio" class="porfolioInput selectorTypeAll"
-               checked="checked">
-        <label for="selectorTypeAll" class="labelTypeAll">All Works<span class="triangle-down"></span></label>
-        <input id="selectorCreative" name="radio-set" type="radio" class="porfolioInput selectorTypeCreative">
-        <label for="selectorCreative" class="labelTypeCreative">Creative<span class="triangle-down"></span></label>
-        <input id="selectorTypeCorporate" name="radio-set" type="radio" class="porfolioInput selectorTypeCorporate">
-        <label for="selectorTypeCorporate" class="labelTypeCorporate">Corporate<span
-                class="triangle-down"></span></label>
-        <input id="selectorTypePorfolio" name="radio-set" type="radio" class="porfolioInput selectorTypePorfolio">
-        <label for="selectorTypePorfolio" class="labelTypePortfolio">Portfolio<span
-                class="triangle-down"></span></label>
-        <ul class="items">
-            <li class="itemType1">
-                <a href="https://nose.fr/fr/" target="_blank">
-                    <img src="webagency_images/images/portfolio/01.jpg" alt="a nose with sunglasses">
-                    <div class="liHover">
-                        <div class="circlingEye">
-                            <span class="fas fa-eye"></span>
-                        </div>
-                        <h4 class="liHoverH4">Nose Paris</h4>
-                        <p class="liHoverP">Nez à nez avec vous !</p>
-                    </div>
-                </a>
-            </li>
-            <li class="itemType1">
-                <a href="http://www.onemorerabbit.com/" target="_blank">
-                    <img src="webagency_images/images/portfolio/02.jpg" alt="Colored Rabbit">
-                    <div class="liHover">
-                        <div class="circlingEye">
-                            <span class="fas fa-eye"></span>
-                        </div>
-                        <h4 class="liHoverH4">One More Rabbit</h4>
-                        <p class="liHoverP">O.M.R</p>
-                    </div>
-                </a>
-            </li>
-            <li class="itemType1">
-                <a href="http://lapompadourfr.webhosting.be/" target="_blank">
-                    <img src="webagency_images/images/portfolio/03.jpg" alt="Pompadour's Logo">
-                    <div class="liHover">
-                        <div class="circlingEye">
-                            <span class="fas fa-eye"></span>
-                        </div>
-                        <h4 class="liHoverH4">La Pompadour</h4>
-                        <p class="liHoverP">On fait aussi des grande taille !</p>
-                    </div>
-                </a>
-            </li>
-            <li class="itemType2">
-                <a href="https://jwst.nasa.gov/about.html" target="_blank">
-                    <img src="webagency_images/images/portfolio/04.jpg" alt="A model on a sheet">
-                    <div class="liHover">
-                        <div class="circlingEye">
-                            <span class="fas fa-eye"></span>
-                        </div>
-                        <h4 class="liHoverH4">About the Webb</h4>
-                        <p class="liHoverP">Goddard Space Flight Center</p>
-                    </div>
-                </a>
-            </li>
-            <li class="itemType2">
-                <a href="https://www.carre-senart.com/" target="_blank">
-                    <img src="webagency_images/images/portfolio/05.jpg" alt="Two shopping bag, one white, the other are black">
-                    <div class="liHover">
-                        <div class="circlingEye">
-                            <span class="fas fa-eye"></span>
-                        </div>
-                        <h4 class="liHoverH4">Carré sénart</h4>
-                        <p class="liHoverP">Le nouveau temple de la consommation</p>
-                    </div>
-                </a>
-            </li>
-            <li class="itemType2">
-                <a href="https://www.youtube.com/watch?v=iK1R4v0LzAU" target="_blank">
-                    <img src="webagency_images/images/portfolio/06.jpg" alt="Part of a city">
-                    <div class="liHover">
-                        <div class="circlingEye">
-                            <span class="fas fa-eye"></span>
-                        </div>
-                        <h4 class="liHoverH4">Stark Tower</h4>
-                        <p class="liHoverP">"We have a hulk"</p>
-                    </div>
-                </a>
-            </li>
-            <li class="itemType3">
-                <a href="http://www.spacex.com/" target="_blank">
-                    <img src="webagency_images/images/portfolio/07.jpg" alt="A rocket launch">
-                    <div class="liHover">
-                        <div class="circlingEye">
-                            <span class="fas fa-eye"></span>
-                        </div>
-                        <h4 class="liHoverH4">Space X</h4>
-                        <p class="liHoverP">On sera dans les temps -"Musk"</p>
-                    </div>
-                </a>
-            </li>
-            <li class="itemType3">
-                <a href="https://un-bureau-plus.com/" target="_blank">
-                    <img src="webagency_images/images/portfolio/08.jpg" alt="Some desktop tool">
-                    <div class="liHover">
-                        <div class="circlingEye">
-                            <span class="fas fa-eye"></span>
-                        </div>
-                        <h4 class="liHoverH4">Un bureau & Plus</h4>
-                        <p class="liHoverP">Espace Coworking</p>
-                    </div>
-                </a>
-            </li>
-            <li class="itemType3">
-                <a href="http://www.pny-hamburgers.fr" target="_blank">
-                    <img src="webagency_images/images/portfolio/full.jpg" alt="A burger">
-                    <div class="liHover">
-                        <div class="circlingEye">
-                            <span class="fas fa-eye"></span>
-                        </div>
-                        <h4 class="liHoverH4">PNY Hamburger</h4>
-                        <p class="liHoverP">The Fu***** Best Burger in the world</p>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</section>
-<div id="contactAlpha"></div>
-<section id="contact">
-    <iframe class="interactiveMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10496.674791890118!2d2.3484175652266264!3d48.87406051277832!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1521452319062" allowfullscreen></iframe>
-    <form action="action.php">
-        <h3>Contact Info</h3>
-        <h6>WebAgency SAS</h6>
-        <p>25 rue d'Hauteville 75010 Paris</p>
-        <p>tel: 01 02 03 04 05</p>
-        <input type="text" placeholder="Name" class="formInput1">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Subject">
-        <textarea id="txtareaMsg" placeholder="Message" cols="30" rows="8"></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
-<footer>
-    <p>©2018 to ∞ - <a href="#acceuilAlpha"><span class="blueStyle">WebAgency</span></a> - All rights reserved.</p>
-</footer>
+/*Header /NavB*/
+.header{
+    z-index: 3000;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header nav{
+    width: 80%;
+    margin: 1% 10% 2% 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 0;
+}
+.header nav ul li{
+    margin: 0 7% 0 0;
+}
+.header nav ul li a{
+    text-decoration: none;
+    color:#777777;
+}
+.header nav ul li a:hover{
+    color: #555555;
+    border-top: 3px solid #5cadd3;
+    padding-top: 15px;
+}
 
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-</body>
-</html>
+/*Acceuil*/
+.blueStyle{
+    color: #5cadd3;
+}
+#accueil:target {
+     padding-top: 5%;
+     margin-top: -5%;
+ }
+#acceuil{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#acceuil input{
+    display: none;
+}
+.chevronLeft{
+    z-index: 1000;
+    position: absolute;
+    top: 45%;
+    left: 0.5%;
+    cursor: pointer;
+    color: #fff;
+}
+.chevronRight{
+    z-index: 1000;
+    position: absolute;
+    top: 47%;
+    right: 0.5%;
+    cursor: pointer;
+    color: #fff;
+}
+.chevronRight:hover{transform: scale(1.1)}
+.chevronLeft:hover{transform: scale(1.1)}
+.bg1{
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    opacity: 0;
+    transition: 850ms;
+}
+.bg1 img{
+    width: 100%;
+}
+.innerBg {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 8%;
+    color: #fff;
+}
+.innerBg h1{
+    text-transform: uppercase;
+}
+.innerBg h2{text-transform: uppercase}
+.innerBgButton{
+    color: white;
+    width: 25%;
+    /* height: 40px; */
+    padding: 2%;
+    background: #5cadd3;
+    border-radius: 5px;
+    border: 0;
+    border-bottom: solid 3px #4494bb;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    }
+.innerBgButton a{text-decoration: none; color: white}
+.innerBgButton:hover{transform: scale(1.1);cursor: pointer}
+.innerBgButton:focus{outline-style:none;}
+.bg2{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    opacity: 0;
+    transition: 850ms;
+}
+.bg2 img{
+    width: 100%;
+}
+.viewBar{
+    transition: 1000ms ease;
+    background: #4494bb;
+    width: 10%;
+    height: 4px;
+    position: absolute;
+    z-index: 2000;
+    bottom: 0;
+    left: 0;
+}
+/**/
+#chevronRight:checked ~ .bg2{z-index: 100; opacity: 1;}
+#chevronRight:checked ~ .viewBar{left: 90%; z-index: 2000;}
+#chevronLeft:checked ~ .bg1{z-index: 100; opacity: 1;}
+/*Nos Services*/
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#services:target {
+    padding-top: 2%;
+    margin-top: -2%;
+}
+#services h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 5% 0 0 0;
+    width: 90%;
+}
+.serviceMainP{width: 60%}
+.serviceSecondP {
+    width: 90%;
+    margin: 0;
+}
+.servicesDivider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    margin: 5% 0;
+}
+.mainServices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 5% 0 5% 0;
+}
+.main1{
+    width: 50%;
+}
+.main1 img{
+    width: 100%;
+}
+.main2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main2 h3{
+    margin: 10% 0 1% 5%;
+}
+.main2 p{
+    margin: 2% 0 0 5%;
+    text-align: left;
+}
+.subMain1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.circlingIco{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: solid 1px #d9d9d9;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+}
+.circlingIco .circlingImg{
+    color: #5cadd3;
+    position: absolute;
+    left: 21%;
+    transform: scale(0.75);
+}
+.circlingIco .bluePoint2{
+    transform: scale(5.3);
+    font-family: "Comic Sans MS", sans-serif;
+    color: #5cadd3;
+    position: absolute;
+    bottom: 88%;
+    left: 95%;
+}
+.subMain1 img{
+    margin: 15% 2% 0 0;
+}
+.subMain2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+}
+/*Nos Projets*/
+#projets{
+
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#projets:target {
+    padding-top: 2%;
+    margin-top: -2%;
+}
+#projets h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 5% 0 0 0;
+    width: 90%;
+}
+.projetP{
+    width: 55%;
+    margin: 0;
+}
+
+    /*Nos Projets / Portfolio*/
+.portfolioContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 5% 0 5% 0;
+    position: relative;
+}
+.labelTypeAll{
+    position: absolute;
+    right: 62%;
+    top: 0;
+}
+.labelTypeCreative{
+    position: absolute;
+    top: 0;
+    right: 50%;
+}
+.labelTypeCorporate{
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.labelTypePortfolio{
+    position: absolute;
+    top: 0;
+    left: 62%;
+}
+.labelTypeAll{
+    border-radius: 5px 0 0 5px;
+}
+.labelTypePortfolio{
+    border-radius: 0 5px 5px 0;
+}
+.porfolioInput{
+    display: none;
+}
+.portfolioContainer label{
+    transition: 500ms;
+    background: #e5e5e5;
+    cursor: pointer;
+    width: 10%;
+    padding: 1%;
+    margin: 0;
+}
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-top: 1em solid #4494BB;
+    position: absolute;
+    bottom: -37%;
+    right: 40%;
+    display: none;
+}
+.porfolioInput:checked + label{
+    background: #5cadd3;
+    color: #fff;
+    border-bottom: solid 3px #4494bb
+}
+.porfolioInput:checked + label .triangle-down{display: initial;}
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 7% 5% 0 5%;
+}
+.items li{
+    transition: 500ms;
+    position: relative;
+    width: 23%;
+    margin: 1% 0;
+}
+.items li a img{
+    width: 100%;
+}
+.items .liHover{display: none;}
+.items .liHover h4{display: none}
+.items .liHover p{display: none}
+.circlingEye{
+    position: absolute;
+    top: -20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border: solid 1px white;
+    border-radius: 50px;
+    background: #5cadd3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.items li a:hover > .liHover{
+    position: absolute;
+    bottom: 5px;
+    max-width: 100%;
+    width: 100%;
+    height: 35%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.items li a:hover > .liHover .liHoverH4{
+    display: block;
+    color: #fff;
+    margin: 0 0 0 1%;
+    font-size: 0.9em;
+}
+.items li a:hover > .liHover .liHoverP{
+    display: block;
+    color: #fff;
+    margin: 0 0 0 1%;
+    font-size: 0.7em;
+}
+    /*liLinkByInputChecked*/
+.selectorTypeCreative:checked ~ .items .itemType2{transition: 450ms;opacity: 0.2;}
+.selectorTypeCreative:checked ~ .items .itemType3{transition: 450ms;opacity: 0.2;}
+.selectorTypeCorporate:checked ~ .items .itemType1{transition: 450ms;opacity: 0.2;}
+.selectorTypeCorporate:checked ~ .items .itemType3{transition: 450ms;opacity: 0.2;}
+.selectorTypePorfolio:checked ~ .items .itemType1{transition: 450ms;opacity: 0.2;}
+.selectorTypePorfolio:checked ~ .items .itemType2{transition: 450ms;opacity: 0.2;}
+
+/*Contact*/
+#contactAlpha:target{padding-top: 5%; margin-top: -5%}
+#contact{
+    background-color: #5cadd3;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+}
+.interactiveMap{
+    height: 600px;
+    border:0;
+    width: 100%;
+    opacity: 0.65;
+}
+form{
+    background: rgba(245,245,245, 0.85);
+    color: #848484;
+    position: absolute;
+    right: 10%;
+    bottom: 17%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    margin: 1%;
+}
+form h3{
+    align-self: flex-start;
+    margin: 5% 0 1% 5%;
+}
+form h6{
+    align-self: flex-start;
+    margin: 5% 0 0 5%;
+}
+form p{
+    align-self: flex-start;
+    margin: 0 0 0 5%;
+    font-size: 0.7em;
+}
+.formInput1{
+    margin-top: 8%;
+}
+form input{
+    border: solid #ccc 1px;
+    border-radius: 3px;
+    margin-bottom: 2%;
+    padding: 2%;
+    width: 90%;
+}
+form textarea{
+    border: solid #ccc 1px;
+    border-radius: 3px;
+    margin-bottom: 2%;
+    padding: 2%;
+    width: 90%;
+    max-width: 90%;
+    min-width: 90%;
+    font-family: roboto, Arial, sans-serif;
+    resize: none;
+}
+form button{
+    align-self: flex-start;
+    margin: 7px;
+    padding: 8px;
+    color: white;
+    width: 50%;
+    background: #5cadd3;
+    border-radius: 5px;
+    border: 0;
+    border-bottom: solid 3px #4494bb;
+    }
+form button:hover{transform: scale(0.9);}
+form button:focus{outline-style:none;}
+
+/*footer*/
+footer{
+    margin: 1% 0 0.5% 0;
+    text-align: center;
+    text-transform: none;
+    font-size: 0.6em;
+}
+footer a{
+    text-decoration: none;
+}
+
+/*MediaQ*/
+@media all and (max-width: 1440px) {
+    .triangle-down{
+        bottom: -40%;
+    }
+}
+@media all and (min-width: 1024px) and (max-width: 1259px){
+    #services:target{padding-top: 5%;margin-top: -5%;}
+    #projets:target{padding-top: 5%;margin-top: -5%;}
+    .triangle-down {
+        bottom: -47%;
+        right: 35%;
+    }
+    .sectionDivider{
+        margin: 5% 0;
+    }
+    .items{margin: 10% 5% 0 5%;}
+    .items li{width: 30%;}
+    .mainServices {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main1{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .main2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .subMain1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10% 0;
+    }
+    .subMain1 img {margin: 0 0 1% 0;}
+    .subMain2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subMain2 h3{margin: 0 0 2% 0;font-size: 1.5em;}
+    .subMain2 p{width: 80%;margin: 0;}
+    .circlingIco{margin: 0 0 2% 0}
+}
+@media all and (min-width: 768px) and (max-width: 1023px){
+    body{
+        padding-top: 10%;
+    }
+    #services:target{padding-top: 5%;margin-top: -5%;}
+    #projets:target{padding-top: 5%;margin-top: -5%;}
+    .triangle-down{
+        bottom: -47%;
+        right: 31%;
+    }
+    .sectionDivider{
+        margin: 5% 0;
+    }
+    .innerBg{
+        width: 45%;
+    }
+    .innerBg h1{margin: 0; font-size: 1.3em}
+    .innerBg h2{margin: 0; font-size: 1.3em}
+    .innerBg p{font-size: 1.1em}
+    .innerBgButton{width: 30%;}
+    .mainServices {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main1{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .main2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .subMain1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10% 0;
+    }
+    .subMain1 img {
+        margin: 0 0 1% 0;
+    }
+    .subMain2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subMain2 h3{margin: 0 0 2% 0;font-size: 1.5em;}
+    .subMain2 p{width: 80%;margin: 0;}
+    .portfolioContainer{
+        margin: 6% 0 5% 0;
+    }
+    .portfolioContainer label{
+        font-size: 0.9em;
+    }
+    .items{
+        margin: 10% 5% 5% 5%;
+    }
+    .items li{
+        width: 48%;
+    }
+}
+@media all and (min-width: 320px) and (max-width: 767px){
+    body {padding-top: 30%;}
+    #accueil:target{padding-top: 30%;margin-top: -30%;}
+    #services:target{padding-top: 30%;margin-top: -30%;}
+    #projets:target{padding-top: 30%;margin-top: -30%;}
+    #contactAlpha:target{padding-top: 30%; margin-top: -30%}
+    .sectionDivider{margin: 10% 0;}
+    .header nav {
+        width: 80%;
+        margin: 0 10% 0 10%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header .navB img{margin: 1% 0}
+    .header nav ul li a:hover {
+        color: #555555;
+        border-bottom: 3px solid #5cadd3;
+        border-top: none;
+        padding-bottom: 15px;
+        padding-top: initial;
+    }
+    .bg1{display: flex; align-items: center;text-align: center;}
+    .bg1 label{display: none;}
+    .bg1 img{display: none;}
+    .bg2 label{display: none}
+    .bg2 img{display: none}
+    .bg2 .innerBg{display: none}
+    .viewBar{display: none}
+    .innerBg h1 {margin: 0 0 2% 0;}
+    .innerBg h2 {margin: 0 0 2% 0;}
+    .innerBg p {display: none}
+    .innerBg{
+        width: 90%;
+        position: initial;
+        flex-direction: column;
+        align-items: center;
+        color: inherit;
+    }
+    .innerBgButton{width: 32%}
+    .mainServices {
+        flex-direction: column;
+        align-items: center;
+    }
+    #services{margin-top: 10%;margin-bottom: 17%;}
+    #services p{
+        width: 80%;
+    }
+    .main1{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .main2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .subMain1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10% 0;
+    }
+    .subMain1 img {
+        margin: 0 0 1% 0;
+    }
+    .subMain2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subMain2 h3{margin: 0 0 2% 0;font-size: 1.5em;}
+    .subMain2 p{width: 80%;margin: 0;}
+    .circlingIco{margin: 0 0 2% 0}
+    .projetP {width: 80%;margin: 0 0 5% 0;}
+    .portfolioContainer label{font-size: 0.9em;width: 21%}
+    .labelTypeAll{right: 73%}
+    .labelTypePortfolio{left: 73%}
+    .triangle-down{bottom: -57.8%;right: 33%}
+    .items{
+        flex-direction: column;
+        align-items: center;
+        margin: 20% 5% 20% 5%;
+    }
+    .items li{width: 90%}
+    #contact{
+        width: 90%;
+        flex-direction: column-reverse;
+        align-self: center;
+    }
+    #contact form{
+        position: initial;
+        background: rgb(227, 227, 227);
+        color: #000;
+        margin: 0;
+    }
+}
+@media all and (max-width: 430px) {body{padding-top: 40%}}
+@media all and (min-device-width: 320px) and (max-device-width: 767px){
+    body {padding-top: 30%;}
+    #accueil:target{padding-top: 20%;margin-top: -20%;}
+    #services:target{padding-top: 20%;margin-top: -20%;}
+    #projets:target{padding-top: 20%;margin-top: -20%;}
+    #contactAlpha:target{padding-top: 20%; margin-top: -20%}
+    .sectionDivider{margin: 10% 0;}
+    .header nav {
+        width: 80%;
+        margin: 0 10% 0 10%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header .navB img{margin: 1% 0}
+    .header .navB ul{
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        font-size: 2em;
+    }
+    .bg1{display: flex; align-items: center;text-align: center;}
+    .bg1 label{display: none;}
+    .bg1 img{display: none;}
+    .bg2 label{display: none}
+    .bg2 img{display: none}
+    .bg2 .innerBg{display: none}
+    .viewBar{display: none}
+    .innerBg h1 {margin: 0 0 2% 0;font-size: 3em}
+    .innerBg h2 {margin: 0 0 2% 0;font-size: 3em}
+    .innerBg p {display: none}
+    .innerBg{
+        width: 90%;
+        position: initial;
+        flex-direction: column;
+        align-items: center;
+        color: inherit;
+    }
+    .innerBgButton {
+        width: 32%;
+        font-size: 2em;
+        text-decoration: none;
+        }
+    .innerBgButton a{color: white}
+    .innerBgButton:hover{font-size: 2.3em}
+    .innerBgButton a:visited{color: white}
+    .innerBgButton a:focus{outline-style: none}
+    .mainServices {
+        flex-direction: column;
+        align-items: center;
+    }
+    #services{margin-top: 10%}
+    #services p{
+        width: 80%;
+    }
+    .main1{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .main2{
+        width: 100%;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .subMain1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10% 0;
+    }
+    .subMain1 img {
+        margin: 0 0 1% 0;
+    }
+    .subMain2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subMain2 h3{margin: 0 0 2% 0;font-size: 1.5em;}
+    .subMain2 p{width: 80%;margin: 0;}
+    .circlingIco{
+        transform: scale(1.5);
+        margin-bottom: 3%;
+    }
+    .projetP {width: 80%;margin: 0 0 5% 0;}
+    .portfolioContainer{margin: 10% 0 5% 0;}
+    .portfolioContainer label{
+        font-size: 2em;
+        width: 25%;
+        height: 1.5%;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;}
+    .labelTypeAll{right: 76.9%}
+    .labelTypePortfolio{left: 76.9%}
+    .triangle-down{bottom: -47%;right: 31%;}
+    .items{
+        flex-direction: column;
+        align-items: center;
+        margin: 25% 5% 20% 5%;
+    }
+    .items li{width: 90%}
+    .items li a:hover > .liHover .liHoverH4 {
+        display: block;
+        color: #fff;
+        margin: 0 0 0 1%;
+        font-size: 2em;
+    }
+    .items li a:hover > .liHover .liHoverP {
+        display: block;
+        color: #fff;
+        margin: 0 0 0 1%;
+        font-size: 1.5em;
+    }
+    #contact{width: 90%;flex-direction: column-reverse;align-self: center;}
+    #contact form{
+        position: initial;
+        background: rgb(222, 222, 222);
+        color: #000;
+        margin: -1px;
+        padding: 0;}
+    #contact form input{font-size: 1em;}
+    #contact form textarea{font-size: 1em;}
+    #contact form button{
+        font-size: 1em;
+        margin: 8px 8px 8px 27px;
+        width: 18%;
+    }
+}
